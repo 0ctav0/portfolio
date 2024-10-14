@@ -6,12 +6,15 @@
   <link rel="icon" href="me.jpg" />
   <link rel="stylesheet" href="src/style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Anna Ra" />
+  <meta name="description" content="Portfolio of Anna Ra a game developer" />
+  <meta name="keywords" content="anna ra, game developer, portfolio" />
   <title>Anna Ra's portfolio</title>
 </head>
 
 <body>
   <div class="me">
-    <img src="me.jpg" alt="Anna Ra Unity Game Developer" />
+    <img src="me.jpg" alt="Anna Ra Game Developer" />
     <h1 class="name">Anna Ra</h1>
     <p class="sub">Located in Russia, eager to relocate</p>
   </div>
@@ -26,7 +29,9 @@
 
   </div>
   <h2>About Me</h2>
-  <p>I am pretty artistic 💃 Love to have fun, play, think of and create video games</p>
+  <p>I am pretty artistic 💃 Love to have fun, play, think of and create video games. I am listening to "The Debug Log"
+    podcast about Unity Game Development.</p>
+  <p>I have 4 years of work experience as developer. 2 of them as frontend developer mostly on React.</p>
   <h2>Skills</h2>
   <div class="horiz">
     <span>JavaScript</span>
@@ -44,7 +49,7 @@
   <details class="accordion" open>
     <summary>Minesweeper Frontend</summary>
     <div class="vert">
-      <img src="minesweeper-frontend/game-field.webp" width="auto" height="400px" />
+      <img alt="Minesweeper frontend game field" src="minesweeper-frontend/game-field.webp" height="400px" />
       <a target="_blank" href="https://github.com/0ctav0/minesweeper-v3-frontend">Github: minesweeper-v3-frontend</a>
       <p>This is my 3rd version of minesweeper made in Web. Used TypeScript + Vite.
         Standard drawing calls to HTMLCanvas element using CanvasRenderingContext2D.
@@ -57,20 +62,18 @@
 
   <details class="accordion">
     <summary>Minesweeper DirectX 11</summary>
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    </p>
-  </details>
-
-  <details class="accordion">
-    <summary>Caves</summary>
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    </p>
+    <div class="vert">
+      <img alt="Minesweeper DirectX game field" src="minesweeper-d3d11/game-field.webp" height="400px" />
+      <a target="_blank" href="https://github.com/0ctav0/D3D11Minesweeper">Github: D3D11Minesweeper</a>
+      <p>I strugled a lot. There's a lot of new topics. More of that is a lot of outdated information. An old DirectX 11
+        functions got deprecated, Effects (FX) is also deprecated. I used <a target="_blank"
+          href="https://github.com/microsoft/DirectXTK">DirectXTK</a> since it has functions that replace deprecated old
+        ones and it has really easy to use many of "vanila" DirectX features.</p>
+      <p>I briefly got to know Windows API programming, standard Windows message queue loop. DirectX 11 setup code,
+        uploading shaders, different kind of buffers into memory, game loop.</p>
+      <p>I used a texture atlas for rendering many sprites for the game.</p>
+      <img alt="Texture atlas" src="minesweeper-d3d11/atlas.webp" width="300px" />
+    </div>
   </details>
 
 </body>
