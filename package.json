@@ -14,6 +14,7 @@
     "vite": "^5.4.8"
   },
   "dependencies": {
-    "preact": "^10.24.3"
+    "preact": "^10.24.3",
+    "preact-router": "^4.1.2"
   }
 }
