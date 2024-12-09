@@ -1,4 +1,4 @@
-import Vid from "./uno-multiplayer-gameplay.mp4"
+import Vid from "./uno-multiplayer-gameplay-v2.mp4"
 import "./uno.css"
 
 export const Uno = () => {
