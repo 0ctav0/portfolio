@@ -6,7 +6,7 @@ export const Minesweeper = () => {
     return (
         <>
             <details class="accordion" open>
-                <summary>Minesweeper Frontend</summary>
+                <summary>Minesweeper Web</summary>
                 <div class="vert">
                     <img alt="Minesweeper frontend game field" src={MinesweeperWeb} height={400} />
                     <a target="_blank" href="https://github.com/0ctav0/minesweeper-v3-frontend">Github: minesweeper-v3-frontend</a>

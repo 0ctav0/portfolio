@@ -2,7 +2,8 @@ import Me from "./img/me.jpg"
 import Telegram from "./img/telegram.png"
 import Mail from "./img/mail.png"
 import Mine from "./img/mine-100.webp"
-import { minesweeperUrl } from "../main"
+import UnoImg from "./img/uno.webp"
+import { minesweeperUrl, unoUrl } from "../main"
 
 export const Home = () => {
     return (
@@ -23,8 +24,7 @@ export const Home = () => {
 
             </div>
             <h2>About Me</h2>
-            <p>I am pretty artistic. 💃 Love to have fun, play, think of, and create video games. I listen to the podcast "The
-                Debug Log" about Unity Game Development.</p>
+            <p>I am pretty artistic. 💃 Love to have fun, play, think of, and create video games. I listen to the podcast "The Debug Log" about Game Development.</p>
             <p>I have 4 years of work experience as a developer, 2 of them as a frontend developer, mostly on React.</p>
             <h2>Skills</h2>
             <div class="horiz">
@@ -38,8 +38,11 @@ export const Home = () => {
                 <span>SQL</span>
             </div>
 
-            <h2>Pet Projects</h2>
-            <a href={minesweeperUrl}><img src={Mine} alt="Minesweeper" /></a>
+            <h2>Games</h2>
+            <div id="games-gallery">
+                <a href={minesweeperUrl}><img src={Mine} alt="Minesweeper" /></a>
+                <a href={unoUrl}><img src={UnoImg} alt="Uno" /></a>
+            </div>
         </>
     )
 }
