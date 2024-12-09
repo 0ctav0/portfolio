@@ -41,6 +41,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+      - name: Copy index as 404 for handling SPA routing
+        run: cp -p dist/index.html dist/404.html
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
