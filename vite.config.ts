@@ -1,3 +1,7 @@
-export default {
-    base: "/portfolio"
-}
+import { defineConfig } from 'vite'
+import preact from '@preact/preset-vite'
+
+export default defineConfig({
+  base: "/portfolio",
+  plugins: [preact()],
+})

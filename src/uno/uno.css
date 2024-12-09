@@ -1,0 +1,10 @@
+#vid-container {
+    background: rgba(0, 0, 0, 1);
+    padding: 30px 0 20px 0;
+}
+
+#vid {
+    width: 320px;
+    height: 500px;
+    clip-path: inset(1px 51px 5px 43px);
+}
