@@ -4,6 +4,7 @@ import { useEffect } from "preact/hooks"
 import Me from "./img/me.jpg"
 import Telegram from "./img/telegram.png"
 import Mail from "./img/mail.png"
+import Github from "./img/github.svg"
 import Mine from "./img/mine-100.webp"
 import UnoImg from "./img/uno.webp"
 import { minesweeperUrl, unoUrl } from "../main"
@@ -34,6 +35,9 @@ export const Home = () => {
                 <a class="horiz" href="mailto:anna.ra.phoenix@gmail.com"><img alt="Link to mail" width={32} height={32}
                     src={Mail} />anna.ra.phoenix@gmail.com</a>
 
+                <a class="horiz" target="_blank" href="https://github.com/0ctav0">
+                    <img alt="Link to Github" src={Github} />
+                    My Github</a>
             </div>
             <h2>About Me</h2>
             <p>I am pretty artistic. 💃 Love to have fun, play, think of, and create video games. I listen to the podcast "The Debug Log" about Game Development.</p>
