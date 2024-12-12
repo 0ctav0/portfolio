@@ -1,3 +1,6 @@
+import tippy from "tippy.js"
+import "tippy.js/dist/tippy.css"
+import { useEffect } from "preact/hooks"
 import Me from "./img/me.jpg"
 import Telegram from "./img/telegram.png"
 import Mail from "./img/mail.png"
@@ -5,7 +8,16 @@ import Mine from "./img/mine-100.webp"
 import UnoImg from "./img/uno.webp"
 import { minesweeperUrl, unoUrl } from "../main"
 
+const BASIC_LEVEL = "Basic level";
+
 export const Home = () => {
+    useEffect(() => {
+        tippy("[data-tippy-content]", {
+            duration: 0,
+            arrow: false,
+            delay: [500, 200],
+        });
+    }, [])
     return (
         <>
             <div class="me">
@@ -28,14 +40,16 @@ export const Home = () => {
             <p>I have 4 years of work experience as a developer, 2 of them as a frontend developer, mostly on React.</p>
             <h2>Skills</h2>
             <div class="horiz">
-                <span>JavaScript</span>
-                <span>C++</span>
-                <span>Unity</span>
-                <span>C#</span>
-                <span>Blender</span>
-                <span>Figma</span>
-                <span>Git</span>
-                <span>SQL</span>
+                <span class="skill" data-tippy-content="Proficient Level. Overall 8 years. Work: 2 years as React frontend dev">TypeScript</span>
+                <span class="skill" data-tippy-content={BASIC_LEVEL}>Unity / C#</span>
+                <span class="skill" data-tippy-content={BASIC_LEVEL}>Figma</span>
+                <span class="skill" data-tippy-content={BASIC_LEVEL}>Git</span>
+                <span class="skill" data-tippy-content={BASIC_LEVEL}>SQL</span>
+            </div>
+            <br />
+            <div class="horiz">
+                <span class="skill" data-tippy-content="Basic level. I actively improve it" >C++</span>
+                <a class="badge" target="_blank" href="https://codewars.com/users/0ctav0"><img src="https://www.codewars.com/users/0ctav0/badges/micro" /></a>
             </div>
 
             <h2>Games</h2>

@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "preact": "^10.24.3",
-    "preact-router": "^4.1.2"
+    "preact-router": "^4.1.2",
+    "tippy.js": "^6.3.7"
   }
 }
