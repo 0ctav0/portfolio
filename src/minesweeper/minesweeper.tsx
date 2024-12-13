@@ -1,5 +1,7 @@
 import MinesweeperWeb from "./web-game-field.webp"
 import MinesweeperD3D from "./d3d-game-field.webp"
+import Win from "./win.mp4"
+import Defeat from "./defeat.mp4"
 import Atlas from "./d3d-atlas.webp"
 
 export const Minesweeper = () => {
@@ -16,6 +18,17 @@ export const Minesweeper = () => {
                     </p>
                     <p>It's integrated into the Telegram bot: <a target="_blank"
                         href="https://t.me/ra_minesweeper_bot">https://t.me/ra_minesweeper_bot</a></p>
+                    <p>Also I created a confetti effect for win effect. Wafe effect when clicking on a mine, to do that I had to initialize webgl context, create copy of a gamefield texture and apply to it graphic pipeline. I had to create vertex and fragment shaders with logic of wave effect.</p>
+                    <div class="horiz">
+                        <video style={{ width: 300 }} autoplay muted loop controls>
+                            <source src={Win} type="video/mp4" />
+                            Your browser does not support HTML5 video.
+                        </video>
+                        <video style={{ width: 300 }} autoplay muted loop controls>
+                            <source src={Defeat} type="video/mp4" />
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
                 </div>
             </details>
 
