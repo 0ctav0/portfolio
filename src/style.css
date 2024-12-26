@@ -101,6 +101,13 @@ h3 {
   margin: 1rem;
 }
 
+#work-exp {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 6fr; */
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
 #games-gallery {
   display: flex;
   gap: 0.5rem;
