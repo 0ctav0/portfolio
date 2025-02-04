@@ -1,7 +1,7 @@
 import tippy from "tippy.js"
 import "tippy.js/dist/tippy.css"
 import { useEffect } from "preact/hooks"
-import Me from "./img/me.jpg"
+import Me from "./img/me1.webp"
 import Telegram from "./img/telegram.png"
 import Mail from "./img/mail.png"
 import Github from "./img/github.svg"
