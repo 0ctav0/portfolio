@@ -1,4 +1,4 @@
-import Vid from "./uno-multiplayer-gameplay-v2.mp4"
+import Vid from "./uno.mp4"
 import "./uno.css"
 
 export const Uno = () => {
@@ -18,6 +18,8 @@ export const Uno = () => {
             <p>I used the authoritative server meaning that the client is sending intention of some action not declaring to do the server something. That is preventing cheating. The server has guards like check if sent a card has in player hands, if a player doesnt have the specified card then the server stops a function execution and logs that player is possibly a cheater.</p>
 
             <p>I used tests on the server and it's rewarding!</p>
+
+            <p>I used DoTween library for animating cards. There's no animation for characters as I used free models without animation included.</p>
 
             <div id="vid-container">
                 <video id="vid" autoplay muted loop controls>
